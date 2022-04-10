@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<!--configuration核心配置文件 整合的话 mybatis只需要负责两样东西 别名 和 mapper映射-->
+<configuration>
+    <!--配置日志-->
+    <settings>
+        <setting name="logImpl" value="LOG4J"/>
+    </settings>
+    <!--配置数据源的事情 让spring做-->
+    <typeAliases>
+        <package name="com.licc.pojo"/>
+    </typeAliases>
+
+
+</configuration>
